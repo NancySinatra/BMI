@@ -8,11 +8,15 @@
    <title>BMI kalkulator</title>
 </head>
 <body>
-   <form oninput="result1.value = num1.value/(num2.value*num2.value)">
+   <fieldset><legend> BMI kalkulator </legend>
+   <form oninput="result1.value = num1.value/(num2.value*num2.value)*10000">
       <input type="number" name="num1"> waga<br>
-      <input type="number" name="num2"> wzrost m <br><br>
+      <input type="number" name="num2"> wzrost cm <br><br>
+      <input type="radio" name="sex" id="k"><label for="k">kobieta</label>
+      <input type="radio" name="sex" id="m"><label for="m">mężczyzna</label><br><br>
       <output id="result1"></output><br><br>
       <button type="submit">Zapisz</button>
+      </fieldset>
    </form>
 </body>
 </html>
